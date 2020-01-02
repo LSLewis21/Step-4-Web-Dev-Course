@@ -3,7 +3,7 @@
 <!--
 Name: Leigha Lewis
 Date Created: 12/29/2019
-Most recent revision: 12/29/2019
+Most recent revision: 1/1/2020
 -->
 
 <html lang="en">
@@ -21,12 +21,82 @@ Most recent revision: 12/29/2019
 	<hr />
 
 	<nav>
+		<ul>
+			<li><a href="projects.html">Projects</a></li>
 
+			<li><a href="testimonials.html">Testimonials</a></li>
+
+			<li><a href="index.html">Home</a></li>
+		</ul>
 	</nav>
 
 	<hr />
 
 	<section>
+		<h2><span style="background-color: lightblue"><em> Information Request </em></span></h2>
+
+		<form action="submit.html" method="POST">
+
+			<!--label tag/id attribute for input makes it more accessible to screen readers -->
+			<label for="firstName">First Name:</label><br />
+				<input type="text" id="firstName" name="firstName" />
+
+			<br />
+
+			<label for="lastName">Last Name:</label><br />
+				<input type="text" id="lastName" name="lastName" />
+
+			<br />
+
+			<label for="phoneNumber">Phone Number:</label><br />
+				<input type="text" id="phoneNumber" name="phoneNumber" />
+
+			<br />
+
+			<label for="contactTime">Best time to call (Central Time):</label><br />
+				<select id="contactTime" name="contactTime">
+					<option value="default" selected>--Select One--</option>
+
+					<option value="morning">Morning (8AM to 12PM)</option>
+
+					<option value="afternoon">Afternoon (12PM to 5PM)</option>
+
+					<option value="evening">Evening (5PM to 8PM)</option>
+				</select>
+
+			<!--<fieldset> and <legend> to group and label around the checkboxes, making it clearer that this is a single question with multiple answers -->
+
+			<fieldset>
+			<legend>I am interested in (check all that apply)</legend><br />
+
+				<input type="checkbox" id="frontEnd" name="frontEnd" />
+					<label for="frontEnd">Front End Web Development</label><br />
+
+				<input type="checkbox" id="backEnd" name="backEnd" />
+					<label for="backEnd">Back End Web Development</label><br />
+
+				<input type="checkbox" id="database" name="database" />
+					<label for="database">Database Design</label></br>
+			</fieldset>
+
+			<fieldset>
+			<legend>I have filled in the client questionnaire form:</legend><br />
+
+				<input type="radio" id="yes" name="filled" value="yes" />
+					<label for="yes">Yes</label><br />
+
+				<input type="radio" id="no" name="filled" value="no" />
+					<label for="no">No</label><br />
+			</fieldset>
+
+			<label for="info">Additional Information</label><br />
+				<textarea id="info" name="info"></textarea>
+
+			<br />
+
+			<input type="submit" name="submit" />
+
+		</form>
 
 	</section>
 

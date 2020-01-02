@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!--
+Name: Leigha Lewis
+Date Created: 1/2/2020
+Most recent revision:
+-->
+
+<html lang="en">
+
+<head>
+	<title>Contact Us - The Salmon Shack</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>The Salmon Shack</h1>
+	</header>
+
+	<hr />
+
+	<nav>
+		<table>
+			<tr>
+				<th><a href="home.html">Home</a></th>
+				<th><a href="menu.html">Menu</a></th>
+				<th><a href="contact.html">Contact Us</a></th>
+			</tr>
+		</table>
+	</nav>
+
+	<hr />
+
+	<section>
+		<form action="submit.html" method="POST">
+		<table>
+			<tr>
+				<td><label for="name">Name:</label></td>
+				<td><input type="text" id="name" name="name" /></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email:</label></td>
+				<td><input type="text" id="email" name="email" /></td>
+			</tr>
+			<tr>
+				<td><label for="phone">Phone:</label></td>
+				<td><input type="text" id="phone" name="phone" /></td>
+			</tr>
+			<tr>
+				<td><label for="reason">Reason for Inquiry:</label></td>
+				<td><select id="reason" name="reason">
+					<option value="catering" selected>Catering</option>
+
+					<option value="party">Private Party</option>
+
+					<option value="feedback">Feedback</option>
+
+					<option value="other">Other</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label for="info">Additional Information:</label></td>
+				<td><textarea id="info" name="info"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="been">Have you been to the restaurant?</label></td>
+				<td>
+				<input type="radio" id="no" name="been" value="NO"><label for="no">No</label>
+
+				<input type="radio" id="yes" name="been" value="YES"><label for="yes">Yes</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="day">Best days to contact you:</label></td>
+				<td>
+				<input type="checkbox" id="m" name="day" />
+					<label for="m">M</label>
+
+				<input type="checkbox" id="t" name="day" />
+					<label for="t">T</label>
+
+				<input type="checkbox" id="w" name="day" />
+					<label for="w">W</label>
+
+				<input type="checkbox" id="th" name="day" />
+					<label for="th">Th</label>
+
+				<input type="checkbox" id="f" name="day" />
+					<label for="f">F</label>
+				</td>
+			</tr>
+		</table>
+
+			<input type="submit" name="submit" />
+
+	</section>
+
+	<hr />
+
+	<footer>
+		<div>2112 Shea Street, Euless, TX 76040</div>
+
+		<p>214-980-3494</p>
+
+		<p>&copy; 2020 Leigha S. Lewis. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
