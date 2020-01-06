@@ -22,7 +22,11 @@ Most recent revision: 1/5/2020
 	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 
 	<style>
-
+		#homeCarousel{
+			margin:auto;
+			padding: 10px;
+			border: medium solid #FF8800;
+			margin-bottom: 15px;
 	</style>
 </head>
 
@@ -47,11 +51,30 @@ Most recent revision: 1/5/2020
 
 	<div class="row">
 		<figure>
-			<img src="images/salmon.jpg" alt="raw salmon on ice in front of a fire" style="align: center;" class="img-fluid" />
+			<img src="images/salmon.jpg" alt="raw salmon on ice in front of a fire" style="align: center;" class="img-fluid mb-5" />
 		</figure>
 	</div>
 	<div class="row">
+		<div id="homeCarousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<h4>Opening new location</h4>
+					<p>Coming soon in North Arlington!</p>
+				</div>
+				<div class="carousel-item">
+					<h4>Drink of the Month</h4>
+					<p>SG Special Brew</p>
+				</div>
+				<div class="carousel-item">
+					<h4>Seasonal Menu</h4>
+					<p>Special limited-time options available soon!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
 		<section>
+			<br />
 
 			<p>We hope you like salmon, because that's the only protein we serve! Come check out our wide variety of differently prepared and cooked (or not!) salmon dishes! From a classic grilled salmon to expertly sliced salmon sashimi to our cutting-edge salmon pizza, we've got something for every salmon lover! Check us out today!</p>
 

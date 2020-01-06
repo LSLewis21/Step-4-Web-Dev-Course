@@ -3,10 +3,11 @@ var die1;
 var die2;
 var bet;
 var gameMoney = 0;
-var roll = 1;
+var roll = 0;
 var totalRolls = 0;
 var maxMoney = 0;
 var rollMaxMoney = 0;
+var endBet;
 
 function validateBet(){
 	bet = document.forms["playGame"]["startingBet"].value;
@@ -15,7 +16,7 @@ function validateBet(){
 		alert("Please bet a number amount greater than zero");
 	}else{
 		gameMoney = bet;
-		checkMoneyAmount(gameMoney,maxMoney);
+		checkMoneyAmount(gameMoney,maxMoney,roll,rollMaxMoney);
 	}
 }
 
@@ -26,13 +27,15 @@ function checkMoneyAmount(gameMoney,maxMoney){
 		rollMaxMoney = roll;
 	}
 	if(gameMoney > 0){
-		rollDice(gameMoney);
+		rollDice(gameMoney,maxMoney);
 	}else{
-		gameOver();
+		endBet = bet;
+		bet = 0;
+		gameOver(roll,endBet,maxMoney,rollMaxMoney);
 	}
 }
 
-function rollDice(gameMoney){
+function rollDice(gameMoney,maxMoney){
 
 	roll++;
 
@@ -41,20 +44,26 @@ function rollDice(gameMoney){
 	diceSum = die1 + die2;
 
 	if(diceSum == 7){
+		/*gameMoney = gameMoney + 4;
+				If I get a 7 on the first roll with this code, gameMoney becomes (bet)4. Ie if bet = 5 and first roll is a 7, gameMoney = 54. gameMoney - 1 has worked fine every time. What in the WORLD??? Why is it reading a number without quotes around it as a string???
+				gameMoney += 4 isn't working for the first roll either*/
 		gameMoney = gameMoney + 4;
 	}else{
 		gameMoney = gameMoney - 1;
 	}
 
-	checkMoneyAmount(gameMoney);
+	checkMoneyAmount(gameMoney,maxMoney);
 }
 
-function gameOver(roll,bet,maxMoney,rollMaxMoney){
+function gameOver(roll,endBet,maxMoney,rollMaxMoney){
 	totalRolls = roll;
-	document.getElementById("endStartingBet").innerText = bet;
+	document.getElementById("endStartingBet").innerText = endBet;
 	document.getElementById("totalRolls").innerText = totalRolls;
 	document.getElementById("maxMoney").innerText = maxMoney;
 	document.getElementById("rollMaxMoney").innerText = rollMaxMoney;
 
+	gameMoney = 0;
+
 	return false;
+	/* Inputs everything in the table fine, then clears it for some reason. Tried return true, tried return, tried omitting return entirely */
 }

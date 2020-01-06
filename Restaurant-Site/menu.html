@@ -17,53 +17,17 @@ Most recent revision: 1/5/2020
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
 	<title>Menu - The Salmon Shack</title>
 
 	<style>
 		section{
-			margin: auto;
-			width: 70%;
-		}
-		figure{
-			margin: auto;
-		}
-		body{
-			background-color: #222222;
-			font-family: sans-serif;
-			color: #FFB159;
-		}
-		.jumbotron{
-			background-color: #333333;
-			color: #FF8800;
-			margin: auto;
-			text-align: center;
-		}
-		footer{
-
-			color: #FF8800;
-			font-weight: bold;
-			margin: auto;
-		}
-		header{
-			font-size: 1.5em;
-		}
-		nav{
-			border-top: thin #FF8800 solid;
-			border-bottom: thin #FF8800 solid;
-			padding-top: 12px;
-			padding-bottom: 12px;
-		}
-		.btn{
-			background-color: #333333;
-			color: #FFB159;
-		}
-		.btn:hover{
-			font-weight:bold;
+			width: 100%;
 		}
 		#menu{
 			margin: auto;
 			table-layout: fixed;
-			width:90%;
 		}
 		td, th{
 			text-align: center;
@@ -94,38 +58,79 @@ Most recent revision: 1/5/2020
 	<br />
 
 	<section>
+	<div class="container">
 
-		<table id="menu">
+		<table class="table table-borderless" id="menu">
+			<div class="row">
 			<tr>
 				<th>Salmon Salad</th>
 				<th>Salmon Bisque</th>
 				<th>Mini Salmon Bagels</th>
 			</tr>
+			</div>
+			<div class="row">
 			<tr>
 				<td>Chunks of grilled salmon, romaine lettuce, cucumber, avocado, tomato, and cilantro with our zesty lime vinaigrette.</td>
 				<td>Rich and creamy bisque made from salmon skin, with hearty chunks of salmon</td>
 				<td>Mini bagels topped with cream cheese, lox, smoked salmon, and dill seasoning</td>
 			</tr>
+			</div>
+			<div class="row">
 			<tr>
 				<td>$12</td>
 				<td>$14</td>
 				<td>$12</td>
 			</tr>
+			</div>
+			<div class="row">
 			<tr>
 				<th class="botrow">Salmon Sashimi</th>
 				<th class="botrow">Classic Grilled Salmon</th>
 				<th class="botrow">Salmon and Artichoke Pizza</th>
 			</tr>
+			</div>
+			<div class="row">
 			<tr>
 				<td>Expertly sliced raw salmon served with soy sauce and wasabi, and a side seaweed salad</td>
 				<td>Salmon filet grilled to perfection with a lemon and rosemary butter sauce, served with steamed broccoli</td>
 				<td>Buttery crust topped with pesto sauce, mozzarella cheese, artichoke hearts, finely chopped salmon, and a blend of Italian seasonings</td>
 			</tr>
+			</div>
+			<div class="row">
 			<tr>
 				<td>$18</td>
 				<td>$20</td>
 				<td>$14</td>
 			</tr>
+			</div>
+		</table>
+
+		<hr />
+
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th colspan="2">Beverages</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+				<tr>
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</tbody>
 		</table>
 
 	</section>
