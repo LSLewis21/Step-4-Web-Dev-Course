@@ -1,0 +1,40 @@
+		section{
+			margin: auto;
+			width: 70%;
+		}
+		figure{
+			margin: auto;
+		}
+		body{
+			background-color: #222222;
+			font-family: sans-serif;
+			color: #FFB159;
+		}
+		.jumbotron{
+			background-color: #333333;
+			color: #FF8800;
+			margin: auto;
+			text-align: center;
+		}
+		footer{
+
+			color: #FF8800;
+			font-weight: bold;
+			margin: auto;
+		}
+		header{
+			font-size: 1.5em;
+		}
+		nav{
+			border-top: thin #FF8800 solid;
+			border-bottom: thin #FF8800 solid;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+		.btn{
+			background-color: #333333;
+			color: #FFB159;
+		}
+		.btn:hover{
+			font-weight:bold;
+		}

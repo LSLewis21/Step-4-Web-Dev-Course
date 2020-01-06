@@ -3,54 +3,83 @@
 <!--
 Name: Leigha Lewis
 Date Created: 1/2/2020
-Most recent revision:
+Most recent revision: 1/5/2020
 -->
 
 <html lang="en">
 
 <head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 	<title>The Salmon Shack</title>
+
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+	<style>
+
+	</style>
 </head>
 
 <body>
+<div class="container">
 
-	<header>
+	<header class="jumbotron">
 		<h1>The Salmon Shack</h1>
+		<h2 class="font-italic">Opening new location!</h2>
+		<h3 class="mt-5">Look for us in North Arlington</h3>
 	</header>
 
-	<hr />
-
 	<nav>
-		<table>
-			<tr>
-				<th><a href="home.html">Home</a></th>
-				<th><a href="menu.html">Menu</a></th>
-				<th><a href="contact.html">Contact Us</a></th>
-			</tr>
-		</table>
+
+		<a class="btn badge-pill" href="home.html">Home</a>
+		<a class="btn badge-pill" href="menu.html">Menu</a>
+		<a class="btn badge-pill" href="contact.html">Contact Us</a>
+
 	</nav>
 
-	<hr />
+	<br />
 
-	<figure>
-		<img src="images/salmon.jpg" alt="raw salmon on ice in front of a fire" />
-	</figure>
+	<div class="row">
+		<figure>
+			<img src="images/salmon.jpg" alt="raw salmon on ice in front of a fire" style="align: center;" class="img-fluid" />
+		</figure>
+	</div>
+	<div class="row">
+		<section>
 
-	<section>
+			<p>We hope you like salmon, because that's the only protein we serve! Come check out our wide variety of differently prepared and cooked (or not!) salmon dishes! From a classic grilled salmon to expertly sliced salmon sashimi to our cutting-edge salmon pizza, we've got something for every salmon lover! Check us out today!</p>
 
-		<p>We hope you like salmon, because that's the only protein we serve! Come check out our wide variety of differently prepared and cooked (or not!) salmon dishes! From a classic grilled salmon to expertly sliced salmon sashimi to our cutting-edge salmon pizza, we've got something for every salmon lover! Check us out today!</p>
-
-	</section>
+		</section>
+	</div>
 
 	<hr />
 
 	<footer>
+	<div class="row">
 		<div>2112 Shea Street, Euless, TX 76040</div>
-
+	</div>
+	<div class="row">
 		<p>214-980-3494</p>
-
+	</div>
+	<div class="row">
 		<p>&copy; 2020 Leigha S. Lewis. All rights reserved.</p>
+	</div>
 	</footer>
+</div>
+	 <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

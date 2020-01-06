@@ -3,91 +3,148 @@
 <!--
 Name: Leigha Lewis
 Date Created: 12/26/2019
-Most recent revision: 1/1/2020
+Most recent revision: 1/2/2020
 -->
 
 <html lang="en">
 
 <head>
 	<title>Leigha's Portfolio</title>
+
+	<link href="styles/mainStyle.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		caption{
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 10px;
+		}
+		#emptab{
+			border-collapse: collapse;
+			margin: auto;
+			max-width:350px;
+		}
+		th, td{
+			border: 3px solid black;
+			padding: 5px;
+		}
+		.navlink{
+			border:none;
+			background-color:turquoise;
+			padding: 0px;
+		}
+		thead{
+			background-color: turquoise;
+		}
+		tbody tr:nth-child(even){
+			background-color: lightgray;
+		}
+		tbody tr:nth-child(odd){
+			background-color: white;
+		}
+
+		.rightcontent{
+			float:left;
+		}
+		ul{
+			max-width:400px;
+		}
+	</style>
 </head>
 
 <body>
 
 	<header id="top">
-		<h1><span style="background-color: lightblue; border: thin solid purple;"> Portfolio for Leigha S. Lewis </span></h1>
+		<h1>Portfolio for Leigha S. Lewis</h1>
+
+		<hr />
+
+		<nav>
+			<table class="navtab">
+				<tr>
+					<td class="navlink"><a href="projects.html">Projects</a></td>
+
+					<td class="navlink"><a href="testimonials.html">Testimonials</a></td>
+
+					<td class="navlink"><a href="contact.html">Contact Me</a></td>
+				</tr>
+			</table>
+		</nav>
+
+		<hr />
 	</header>
 
-	<hr />
-
-	<nav>
-		<ul>
-			<li><a href="projects.html">Projects</a></li>
-
-			<li><a href="testimonials.html">Testimonials</a></li>
-
-			<li><a href="contact.html">Contact Me</a></li>
-		</ul>
-	</nav>
-
-	<hr />
-
 	<section>
-		<article id="about-me">
-			<h2><span style="background-color: lightblue"><em> About Me </em></span></h2>
+		<article id="about-me" class="border">
+			<h2>About Me</h2>
 
 			<figure><img src="images/tempselfie.jpg" alt="Picture of me (temp)" style="height: 400px;" /></figure>
 
 			<p>I'm a <strong>quickly learning, detail-oriented, hard worker</strong> seeking a rewarding, societally beneficial career. I graduated <strong>Magna Cum Laude</strong> with a Bachelor of Science in Physics from Sam Houston State University in May 2016, but have been struggling to find my professional footing since. I'm looking forward to making a career in the software development field, where I'll get a chance to use my <strong>sharp logic and reasoning skills</strong> to create apps and programs that will help my fellow man.</p>
 
 			<p><a href="https://www.linkedin.com/in/leigha-s-lewis" target="_blank">My LinkedIn Profile</a></p>
+
+			<div class="endfloat"></div>
 		</article>
 
-		<article id="past-experiences">
-			<h2><span style="background-color: lightblue"><em> Past Experiences </em></span></h2>
+		<article id="past-experiences" class="border">
+			<h2>Past Experiences</h2>
 
-			<figure><img src="images/diploma.jpg" alt="Picture of my diploma" style="width: 500px" /></figure>
+			<figure>
+			<img src="images/diploma.jpg" alt="Picture of my diploma" style="width: 400px;" /></figure>
 
-			<table border="5" width="60%">
+			<div class="rightcontent">
+
+			<table id="emptab">
 				<caption>Employment and Education History</caption>
 
-				<tr>
-					<th>Dates Employed</th>
-					<th>Title</th>
-					<th>Company</th>
-				</tr>
-				<tr>
-					<td>Dec 2019-present</td>
-					<td>Apprentice</td>
-					<td>The Software Guild</td>
-				</tr>
-				<tr>
-					<td>Dec 2018-present</td>
-					<td>Runner</td>
-					<td>Favor Delivery</td>
-				</tr>
-				<tr>
-					<td>Sept 2016-Dec 2018</td>
-					<td>Associate</td>
-					<td>Mish Mash</td>
-				</tr>
-				<tr>
-					<td>Aug 2010-May 2016</td>
-					<td>Student</td>
-					<td>Sam Houston State University</td>
-				</tr>
-				<tr>
-					<td>May 2015-July 2015</td>
-					<td>REU Intern</td>
-					<td>TAMU Mechanical Engineering Dept.</td>
-				</tr>
+				<thead>
+					<tr>
+						<th>Dates Employed</th>
+						<th>Title</th>
+						<th>Company</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Dec 2019-present</td>
+						<td>Apprentice</td>
+						<td>The Software Guild</td>
+					</tr>
+					<tr>
+						<td>Dec 2018-present</td>
+						<td>Runner</td>
+						<td>Favor Delivery</td>
+					</tr>
+					<tr>
+						<td>Sept 2016-Dec 2018</td>
+						<td>Associate</td>
+						<td>Mish Mash</td>
+					</tr>
+					<tr>
+						<td>Aug 2010-May 2016</td>
+						<td>Student</td>
+						<td>Sam Houston State University</td>
+					</tr>
+					<tr>
+						<td>May 2015-July 2015</td>
+						<td>REU Intern</td>
+						<td>TAMU Mechanical Engineering Dept.</td>
+					</tr>
+				</tbody>
 			</table>
+
+			</div>
+
+			<div class="endfloat"></div>
 		</article>
 
-		<article id="hobbies">
-			<h2><span style="background-color: lightblue"><em> Hobbies </em></span></h2>
+		<article id="hobbies" class="border">
+			<h2>Hobbies</h2>
 
-			<figure><img src="images/wakeboarding.jpg" alt="Picture of me wakeboarding" style="width: 400px" /></figure>
+			<figure><img src="images/wakeboarding.jpg" alt="Picture of me wakeboarding" style="width: 400px;" /></figure>
+
+			<div class="rightcontent">
 
 			<ul>
 				<li>TV shows</li>
@@ -122,6 +179,10 @@ Most recent revision: 1/1/2020
 						<li>Looking at memes</li>
 					</ul>
 			</ul>
+
+			</div>
+
+			<div class="endfloat"></div>
 		</article>
 	</section>
 

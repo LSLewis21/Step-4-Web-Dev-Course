@@ -10,30 +10,39 @@ Most recent revision: 1/1/2020
 
 <head>
 	<title>Contact Me - Leigha's Portfolio</title>
+
+	<link href="styles/mainStyle.css" rel="stylesheet" type="text/css" />
+
+	<style>
+
+	</style>
 </head>
 
 <body>
 
-	<header>
-		<h1><span style="background-color: lightblue; border: thin solid purple;">Contact Me</span></h1>
+	<header id="top">
+		<h1>Contact Me</h1>
+		<hr />
+
+		<nav>
+			<table class="navtab">
+				<tr>
+					<td class="navlink"><a href="index.html">Home</a></td>
+
+					<td class="navlink"><a href="projects.html">Projects</a></td>
+
+					<td class="navlink"><a href="testimonials.html">Testimonials</a></td>
+				</tr>
+			</table>
+		</nav>
+
+		<hr />
 	</header>
 
-	<hr />
 
-	<nav>
-		<ul>
-			<li><a href="projects.html">Projects</a></li>
 
-			<li><a href="testimonials.html">Testimonials</a></li>
-
-			<li><a href="index.html">Home</a></li>
-		</ul>
-	</nav>
-
-	<hr />
-
-	<section>
-		<h2><span style="background-color: lightblue"><em> Information Request </em></span></h2>
+	<section class="border">
+		<h2>Information Request</h2>
 
 		<form action="submit.html" method="POST">
 
@@ -101,6 +110,8 @@ Most recent revision: 1/1/2020
 	</section>
 
 	<footer>
+		<p><a href="#top">Return to top</a></p>
+
 		<hr />
 
 		<p>&copy; 2020 Leigha S. Lewis. All rights reserved.</p>

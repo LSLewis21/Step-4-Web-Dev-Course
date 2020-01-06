@@ -1,0 +1,25 @@
+body{
+	background-color: lightgray;
+	font-family: sans-serif;
+	margin: 10px;
+}
+hr{
+	width: 95%;
+	border: 3px dashed purple;
+}
+header, footer{
+	background-color: turquoise;
+	border: thick solid purple;
+	color: purple;
+	text-align: center;
+}
+h2{
+	background-color: turquoise;
+	color: purple;
+	font-style: italic;
+}
+.border{
+	border: thick solid purple;
+}
+
+

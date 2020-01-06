@@ -3,38 +3,99 @@
 <!--
 Name: Leigha Lewis
 Date Created: 1/2/2020
-Most recent revision:
+Most recent revision: 1/5/2020
 -->
 
 <html lang="en">
 
 <head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 	<title>Menu - The Salmon Shack</title>
+
+	<style>
+		section{
+			margin: auto;
+			width: 70%;
+		}
+		figure{
+			margin: auto;
+		}
+		body{
+			background-color: #222222;
+			font-family: sans-serif;
+			color: #FFB159;
+		}
+		.jumbotron{
+			background-color: #333333;
+			color: #FF8800;
+			margin: auto;
+			text-align: center;
+		}
+		footer{
+
+			color: #FF8800;
+			font-weight: bold;
+			margin: auto;
+		}
+		header{
+			font-size: 1.5em;
+		}
+		nav{
+			border-top: thin #FF8800 solid;
+			border-bottom: thin #FF8800 solid;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+		.btn{
+			background-color: #333333;
+			color: #FFB159;
+		}
+		.btn:hover{
+			font-weight:bold;
+		}
+		#menu{
+			margin: auto;
+			table-layout: fixed;
+			width:90%;
+		}
+		td, th{
+			text-align: center;
+		}
+		.botrow{
+			padding-top:20px;
+		}
+	</style>
 </head>
 
 <body>
+<div class="container">
 
-	<header>
+	<header class="jumbotron">
 		<h1>The Salmon Shack</h1>
+		<h2 class="font-italic">Opening new location!</h2>
+		<h3 class="mt-5">Look for us in North Arlington</h3>
 	</header>
 
-	<hr />
-
 	<nav>
-		<table>
-			<tr>
-				<th><a href="home.html">Home</a></th>
-				<th><a href="menu.html">Menu</a></th>
-				<th><a href="contact.html">Contact Us</a></th>
-			</tr>
-		</table>
+
+		<a class="btn badge-pill" href="home.html">Home</a>
+		<a class="btn badge-pill" href="menu.html">Menu</a>
+		<a class="btn badge-pill" href="contact.html">Contact Us</a>
+
 	</nav>
 
-	<hr />
+	<br />
 
 	<section>
 
-		<table width="70%">
+		<table id="menu">
 			<tr>
 				<th>Salmon Salad</th>
 				<th>Salmon Bisque</th>
@@ -51,9 +112,9 @@ Most recent revision:
 				<td>$12</td>
 			</tr>
 			<tr>
-				<th>Salmon Sashimi</th>
-				<th>Classic Grilled Salmon</th>
-				<th>Salmon and Artichoke Pizza</th>
+				<th class="botrow">Salmon Sashimi</th>
+				<th class="botrow">Classic Grilled Salmon</th>
+				<th class="botrow">Salmon and Artichoke Pizza</th>
 			</tr>
 			<tr>
 				<td>Expertly sliced raw salmon served with soy sauce and wasabi, and a side seaweed salad</td>
@@ -78,6 +139,15 @@ Most recent revision:
 
 		<p>&copy; 2020 Leigha S. Lewis. All rights reserved.</p>
 	</footer>
+</div>
+
+	 <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
